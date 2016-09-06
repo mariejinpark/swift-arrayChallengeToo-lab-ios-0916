@@ -38,7 +38,7 @@ class DeliSpec: QuickSpec {
             it("Should perform the appropriate actions (according to the instructions) when Billy Crystal walks into the Deli") {
                 
                 // Establishing a line with 3 people on it before Billy Crystal walks in.
-                testVC.deliLine = ["Jess", "Jacob", "Amanda"]
+                testVC.deliLine = ["Billy Crystal", "Jacob", "Amanda"]
                 
                 let billyCrystalGreeting = testVC.addNameToDeliLine("Billy Crystal")
                 let actualCountOfLine = testVC.deliLine.count
@@ -86,9 +86,9 @@ class DeliSpec: QuickSpec {
                 
                 let servedLine = testVC.deliLine
                 
-                let expextedLine = ["Catherine", "Paul"]
+                let expectedLine = ["Catherine", "Paul"]
                 
-                expect(servedLine).to(equal(expextedLine))
+                expect(servedLine).to(equal(expectedLine))
                 
             }
         }
